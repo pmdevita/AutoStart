@@ -1,0 +1,4 @@
+name: AutoStart
+main: net.pdevita.autostart.AutoStart
+version: 1.0
+author: pmdevita

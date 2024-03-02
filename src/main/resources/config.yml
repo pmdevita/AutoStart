@@ -1,0 +1,25 @@
+# AutoStart
+
+# Server start command
+
+# In Linux, it's a good idea to use tmux to run your server. It will allow you to keep the server running even if you
+# are not SSH'd in. It also gives you console access, which running as a service wouldn't
+
+# If you are using tmux, run Bungee in it's own window. The example commands will make it launch the MC server in a
+# window pane side-by-side with Bungee
+
+# Path to your spigot server directory
+directory:
+
+# Command to run in given directory to start server
+# If you are using tmux as described above, this will launch the server startup script in a new window pane
+# command: tmux split-window -h ./start.sh
+# If you are using Windows or another OS with a display, just launching the startup script by itself should be fine
+# command: start.bat
+command:
+
+# Delay to wait (in seconds)
+# How long should Bungee wait for the server to start before assuming it failed. This is to prevent Bungee from launching
+# multiple instances of the server
+# This should be fairly high, perhaps 1.5x or 2x the time it takes for your server to start.
+delay: 120
